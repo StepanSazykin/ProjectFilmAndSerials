@@ -1,0 +1,23 @@
+﻿@model Form
+@{
+    ViewData["Title"] = "Приложение для отслеживания просмотренных фильмов и сериалов";
+}
+
+<h1>Приложение для отслеживания просмотренных фильмов и сериалов</h1>
+
+<form method="post" asp-controller="Home" asp-action="Check">
+    <label asp-for="IsWatched"></label>
+    <input asp-for="IsWatched" />
+    <span asp-validation-for="IsWatched"></span>
+
+    <label asp-for="Type"></label>
+
+    <label asp-for="Name"></label>
+
+    <label asp-for="Rating"></label>
+    <input asp-for="Rating" />
+    <span asp-validation-for="Rating"></span>
+
+    <input type ="submit" value="Окей" />
+
+</form>
